@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول | ASEEL Perfumes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+   <!-- Navbar Capsule -->
+<header class="header-wrapper">
+    <nav class="pill-navbar">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">ASEEL</a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="shop.html">المتجر</a></li>
+            <li><a href="about.html" class="active">من نحن</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="login.html" class="nav-cta">تسجيل الدخول</a>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+</header>
+
+
+    <!-- Modern Login Section -->
+    <section class="login-wrapper">
+        
+        <!-- Image Side -->
+        <div class="login-image">
+            <div class="overlay-content">
+                <h2>أهلاً بك في عالم الفخامة</h2>
+                <p>سجّل دخولك لإتمام عملية الشراء ومتابعة طلباتك السابقة.</p>
+            </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="login-content">
+            <div class="login-box">
+                <div class="login-header">
+                    <h1>تسجيل الدخول</h1>
+                    <p>مرحباً بعودتك</p>
+                </div>
+
+                <form id="loginForm" novalidate>
+                    <!-- Email Input -->
+                    <div class="input-group">
+                        <input type="email" id="loginEmail" required placeholder=" ">
+                        <label for="loginEmail">البريد الإلكتروني</label>
+                        <i class="fas fa-envelope input-icon"></i>
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="input-group">
+                        <input type="password" id="loginPassword" required placeholder=" ">
+                        <label for="loginPassword">كلمة المرور</label>
+                        <i class="fas fa-eye input-icon toggle-password"></i> <!-- Eye Icon -->
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="form-actions">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                        <a href="#" class="forgot-pass">نسيت كلمة المرور؟</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-gold btn-full">دخول</button>
+
+                    <!-- Divider -->
+                    <div class="divider">
+                        <span>أو سجل الدخول عبر</span>
+                    </div>
+
+                    <!-- Social Login -->
+                    <div class="social-login">
+                        <button type="button" class="social-btn"><i class="fab fa-google"></i> Google</button>
+                        <button type="button" class="social-btn"><i class="fab fa-apple"></i> Apple</button>
+                    </div>
+                </form>
+
+                <div class="login-footer">
+                    <p>ليس لديك حساب؟ <a href="#">إنشاء حساب جديد</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        // سكربت بسيط لإظهار وإخفاء كلمة المرور (خاص بهذه الصفحة)
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordInput = document.querySelector('#loginPassword');
+
+        if(togglePassword) {
+            togglePassword.addEventListener('click', function () {
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
+        }
+    </script>
+</body>
+</html>

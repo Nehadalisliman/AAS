@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عود ملكي | ASEEL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar Capsule -->
+    <header class="header-wrapper">
+        <nav class="pill-navbar">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">ASEEL</a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="shop.html">المتجر</a></li>
+                <li><a href="about.html" class="active">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="login.html" class="nav-cta">تسجيل الدخول</a>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- مسار التنقل -->
+    <div class="breadcrumbs-container">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="shop.html">المتجر</a></li>
+                <li>عود ملكي فاخر</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- تفاصيل المنتج -->
+    <section class="product-page">
+        <div class="container">
+            <div class="product-layout">
+                
+                <!-- معرض الصور -->
+                <div class="product-gallery">
+                    <div class="main-image-container">
+                        <img id="mainImage" src="https://images.unsplash.com/photo-1594035910387-fea4779426e9?q=80&w=800" alt="عود ملكي">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="https://images.unsplash.com/photo-1594035910387-fea4779426e9?q=80&w=200" class="thumb active">
+                        <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=200" class="thumb">
+                        <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=200" class="thumb">
+                    </div>
+                </div>
+
+                <!-- المعلومات -->
+                <div class="product-info-wrapper">
+                    <h4 class="sub-title">الأكثر مبيعاً</h4>
+                    <h1 class="product-title">عود ملكي فاخر</h1>
+                    
+                    <div class="reviews-price">
+                        <span class="price">450 ر.س</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(4.8)</span>
+                        </div>
+                    </div>
+
+                    <p class="description">
+                        سيمفونية عطرية تجسد الفخامة، يمزج بين دفقات العود الكمبودي النادر ولمسات من الزعفران والجلود.
+                    </p>
+
+                    <!-- الهرم العطري -->
+                    <div class="scent-pyramid">
+                        <div class="scent-item"><div class="scent-icon"><i class="fas fa-wind"></i></div><span>افتتاحية</span><small>زعفران، هيل</small></div>
+                        <div class="scent-item"><div class="scent-icon"><i class="fas fa-fan"></i></div><span>القلب</span><small>جلود، خشب</small></div>
+                        <div class="scent-item"><div class="scent-icon"><i class="fas fa-tree"></i></div><span>القاعدة</span><small>عود، عنبر</small></div>
+                    </div>
+
+                    <!-- الخيارات -->
+                    <div class="options">
+                        <label>الحجم:</label>
+                        <div class="size-selector">
+                            <button class="size-btn active">50 مل</button>
+                            <button class="size-btn">100 مل</button>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <input type="text" id="qty" value="1" readonly>
+                            <button>+</button>
+                        </div>
+                        <button class="btn-gold add-cart-btn">إضافة للسلة</button>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <!-- أكورديون التفاصيل -->
+                    <div class="accordions">
+                        <div class="accordion-item">
+                            <button class="accordion-header">الوصف التفصيلي <i class="fas fa-plus"></i></button>
+                            <div class="accordion-content">
+                                <p>هذا العطر مستوحى من التراث العربي الأصيل. تم تعتيق العود لمدة 10 سنوات.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">الشحن والاسترجاع <i class="fas fa-plus"></i></button>
+                            <div class="accordion-content">
+                                <p>شحن مجاني للطلبات فوق 500 ريال. الاسترجاع متاح خلال 7 أيام.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- منتجات مشابهة -->
+    <section class="container related-products">
+        <h2 class="section-title">منتجات قد تعجبك</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500" class="product-img">
+                <div class="product-info">
+                    <h3>مسك أسود</h3>
+                    <span class="price">380 ر.س</span>
+                    <a href="#" class="btn-gold">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=500" class="product-img">
+                <div class="product-info">
+                    <h3>عنبر ليلي</h3>
+                    <span class="price">520 ر.س</span>
+                    <a href="#" class="btn-gold">عرض التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="app-footer"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
