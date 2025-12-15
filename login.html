@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تسجيل الدخول | ASEEL Perfumes</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Arabic Classic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <style>
+        /* تطبيق الخط العربي الكلاسيكي Amiri على الصفحة كلها */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, li, label, input, textarea, button {
+            font-family: 'Amiri', serif;
+        }
+
+        /* زر الدخول الذهبي */
+        .btn-gold {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-gold:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,8 +44,6 @@
      <a href="index.html" class="logo">
     <img src="images/logo.png" alt="ASEEL" style="width:150px; height:auto;">
 </a>
-
-
 
         <!-- Navigation Links -->
         <ul class="nav-links">
@@ -39,7 +63,6 @@
 
     </nav>
 </header>
-
 
     <!-- Modern Login Section -->
     <section class="login-wrapper">
@@ -73,7 +96,7 @@
                     <div class="input-group">
                         <input type="password" id="loginPassword" required placeholder=" ">
                         <label for="loginPassword">كلمة المرور</label>
-                        <i class="fas fa-eye input-icon toggle-password"></i> <!-- Eye Icon -->
+                        <i class="fas fa-eye input-icon toggle-password"></i>
                         <small class="error-msg"></small>
                     </div>
 
@@ -112,7 +135,7 @@
 
     <script src="js/main.js"></script>
     <script>
-        // سكربت بسيط لإظهار وإخفاء كلمة المرور (خاص بهذه الصفحة)
+        // سكربت بسيط لإظهار وإخفاء كلمة المرور
         const togglePassword = document.querySelector('.toggle-password');
         const passwordInput = document.querySelector('#loginPassword');
 

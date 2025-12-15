@@ -9,21 +9,66 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Arabic Classic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <style>
+        /* تطبيق الخط العربي الكلاسيكي Amiri على الصفحة كلها */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, li, label, input, textarea, button {
+            font-family: 'Amiri', serif;
+        }
+
+        /* تكبير اللوجو */
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* تلوين أول حرف في اللوجو */
+        .logo span {
+            color: #FFD700; /* ذهبي */
+        }
+
+        /* زر الإرسال الذهبي */
+        .btn-gold {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-gold:hover {
+            opacity: 0.8;
+        }
+
+        /* ضبط كل الصور بعرض وارتفاع محدد */
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* أقصى ارتفاع للصور */
+            object-fit: cover;
+        }
+
+        /* صور الكاروسيل والمنتجات */
+        .product-card img, .category-card img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
-<!-- ================= Header / Navbar (Luxury Pill) ================= -->
+<!-- ================= Header / Navbar ================= -->
 <header class="header-wrapper">
     <nav class="pill-navbar">
-
-        <!-- Logo -->
-   <a href="index.html" class="logo">
+          <a href="index.html" class="logo">
     <img src="images/logo.png" alt="ASEEL" style="width:150px; height:auto;">
 </a>
 
-
-
-        <!-- Links -->
         <ul class="nav-links">
             <li><a href="index.html" class="active">الرئيسية</a></li>
             <li><a href="shop.html">المتجر</a></li>
@@ -31,17 +76,13 @@
             <li><a href="contact.html">اتصل بنا</a></li>
         </ul>
 
-        <!-- CTA -->
         <a href="login.html" class="nav-cta">تسجيل الدخول</a>
 
-        <!-- Mobile -->
         <div class="mobile-menu-btn">
             <i class="fas fa-bars"></i>
         </div>
-
     </nav>
 </header>
-<!-- ================= End Navbar ================= -->
 
 <!-- ================= Hero Section ================= -->
 <section class="hero-cinematic">
@@ -49,7 +90,6 @@
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
-       
         <h1>العمق. الغموض. <span>الأصالة.</span></h1>
         <p class="hero-desc">
             اكتشف جوهر الفخامة مع مجموعتنا الجديدة المستوحاة من ليالي الصحراء العربية.
@@ -59,12 +99,6 @@
             <a href="about.html" class="btn-outline">قصتنا</a>
         </div>
     </div>
-
-    <div class="scroll-down">
-        <div class="mouse">
-            <div class="wheel"></div>
-        </div>
-    </div>
 </section>
 
 <!-- ================= Marquee ================= -->
@@ -72,11 +106,11 @@
     <div class="marquee-content">
         <span>
             ثبات يدوم طويلاً ✦ مكونات طبيعية نادرة ✦ تغليف فاخر ✦
-            شحن مجاني للطلبات فوق 500 جنية ✦ ضمان ذهبي ✦
+            شحن مجاني للطلبات فوق 500 ج.م ✦ ضمان ذهبي ✦
         </span>
         <span>
             ثبات يدوم طويلاً ✦ مكونات طبيعية نادرة ✦ تغليف فاخر ✦
-            شحن مجاني للطلبات فوق 500 جنية ✦ ضمان ذهبي ✦
+            شحن مجاني للطلبات فوق 500 ج.م ✦ ضمان ذهبي ✦
         </span>
     </div>
 </div>
@@ -90,7 +124,7 @@
 
     <div class="categories-grid">
         <a href="shop.html" class="category-card">
-            <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=600">
+            <img src="images/perone.jpg" alt="العود الملكي" width="300" height="300">
             <div class="cat-info">
                 <h3>العود الملكي</h3>
                 <span>تسوق الآن <i class="fas fa-arrow-left"></i></span>
@@ -98,7 +132,7 @@
         </a>
 
         <a href="shop.html" class="category-card">
-            <img src="images/perone.jpg">
+            <img src="images/pertwo.jpg" alt="المسك الصافي" width="300" height="300">
             <div class="cat-info">
                 <h3>المسك الصافي</h3>
                 <span>تسوق الآن <i class="fas fa-arrow-left"></i></span>
@@ -106,7 +140,7 @@
         </a>
 
         <a href="shop.html" class="category-card">
-            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=600">
+            <img src="images/perthree.jpg" alt="اللمسة الفرنسية" width="300" height="300">
             <div class="cat-info">
                 <h3>اللمسة الفرنسية</h3>
                 <span>تسوق الآن <i class="fas fa-arrow-left"></i></span>
@@ -125,7 +159,7 @@
     <div class="product-slider-wrapper">
         <div class="product-card slider-card">
             <div class="badge">الأكثر طلباً</div>
-            <img src="images/perthree.jpg">
+            <img src="images/perfour.jpg" alt="مسك الختام" width="300" height="300">
             <div class="product-info">
                 <h3>مسك الختام</h3>
                 <span class="price">380 ج.م</span>
@@ -134,19 +168,19 @@
         </div>
 
         <div class="product-card slider-card">
-            <img src="images/pertwo.jpg">
+            <img src="images/perthree.jpg" alt="عود سيوفي" width="300" height="300">
             <div class="product-info">
                 <h3>عود سيوفي</h3>
-                <span class="price">450 م.ج</span>
+                <span class="price">450 ج.م</span>
                 <a href="product.html" class="btn-gold">أضف للسلة</a>
             </div>
         </div>
 
         <div class="product-card slider-card">
-            <img src="images/perfour.jpg">
+            <img src="images/persix.jpg" alt="عنبر ليل" width="300" height="300">
             <div class="product-info">
                 <h3>عنبر ليل</h3>
-                <span class="price">520 م.ج</span>
+                <span class="price">520 ج.م</span>
                 <a href="product.html" class="btn-gold">أضف للسلة</a>
             </div>
         </div>
@@ -169,7 +203,7 @@
         <p>كن أول من يعلم عن إصداراتنا الحصرية وعروضنا الخاصة.</p>
         <form>
             <input type="email" placeholder="البريد الإلكتروني">
-            <button type="submit">اشتراك</button>
+            <button type="submit" class="btn-gold">اشتراك</button>
         </form>
     </div>
 </section>
@@ -200,7 +234,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; بيلدجرام. جميع الحقوق محفوظة.</p>
+            <p>&copy; ASEEL Perfumes. جميع الحقوق محفوظة.</p>
         </div>
     </div>
 </footer>

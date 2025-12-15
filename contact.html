@@ -4,30 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بنا | ASEEL Perfumes</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- مكتبة الأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Arabic Classic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <style>
+        /* تطبيق الخط العربي الكلاسيكي Amiri */
+        body {
+            font-family: 'Amiri', serif;
+        }
+
+        /* تكبير اسم اللوجو */
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* تلوين أول حرف في اللوجو */
+        .logo span {
+            color: #FFD700; /* ذهبي */
+        }
+
+        /* تلوين العناوين في الصفحة */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Amiri', serif;
+        }
+
+        /* تلوين زر الإرسال */
+        .btn-gold {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-gold:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-   <!-- Navbar Capsule -->
+<!-- Navbar -->
 <header class="header-wrapper">
     <nav class="pill-navbar">
 
         <!-- Logo -->
-   <a href="index.html" class="logo">
+          <a href="index.html" class="logo">
     <img src="images/logo.png" alt="ASEEL" style="width:150px; height:auto;">
 </a>
-
-
 
         <!-- Navigation Links -->
         <ul class="nav-links">
             <li><a href="index.html">الرئيسية</a></li>
             <li><a href="shop.html">المتجر</a></li>
-            <li><a href="about.html" class="active">من نحن</a></li>
-            <li><a href="contact.html">اتصل بنا</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="contact.html" class="active">اتصل بنا</a></li>
         </ul>
 
         <!-- CTA Button -->
@@ -41,106 +80,105 @@
     </nav>
 </header>
 
-
-    <!-- Page Title Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>تواصل معنا</h1>
-            <p>نحن هنا لخدمتك والإجابة على استفساراتك حول عطورنا الفاخرة</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-wrapper">
-                
-                <!-- Info Side -->
-                <div class="contact-info">
-                    <h3>معلومات التواصل</h3>
-                    <p class="info-desc">تفضل بزيارة بوتيك أصيل أو تواصل معنا عبر القنوات التالية:</p>
-                    
-                    <div class="info-item">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="details">
-                            <h4>العنوان</h4>
-                            <p>كفر الشيخ ، مصر</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                        <div class="details">
-                            <h4>الهاتف</h4>
-                            <p>01025364499</p>
-                        </div>
-                    </div>
-
-                    <div class="info-item">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="details">
-                            <h4>البريد الإلكتروني</h4>
-                            <p>concierge@aseel.com</p>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
-                    </div>
-                </div>
-
-                <!-- Form Side -->
-                <div class="contact-form-box">
-                    <h3>أرسل رسالة</h3>
-                    <form id="contactForm" novalidate>
-                        <div class="input-group">
-                            <input type="text" id="name" required placeholder=" ">
-                            <label for="name">الاسم الكامل</label>
-                            <small class="error-msg"></small>
-                        </div>
-
-                        <div class="input-group">
-                            <input type="email" id="email" required placeholder=" ">
-                            <label for="email">البريد الإلكتروني</label>
-                            <small class="error-msg"></small>
-                        </div>
-
-                        <div class="input-group">
-                            <input type="text" id="subject" required placeholder=" ">
-                            <label for="subject">موضوع الرسالة</label>
-                            <small class="error-msg"></small>
-                        </div>
-
-                        <div class="input-group">
-                            <textarea id="message" rows="5" required placeholder=" "></textarea>
-                            <label for="message">نص الرسالة</label>
-                            <small class="error-msg"></small>
-                        </div>
-
-                        <button type="submit" class="btn-gold">إرسال الرسالة</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section (Dark Mode Style) -->
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.639379648937!2d46.6752963!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh!5e0!3m2!1sen!2ssa!4v1625680000000!5m2!1sen!2ssa" width="100%" height="450" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy"></iframe>
+<!-- Page Title Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>تواصل معنا</h1>
+        <p>نحن هنا لخدمتك والإجابة على استفساراتك حول عطورنا الفاخرة</p>
     </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy;  ASEEL Perfumes. جميع الحقوق محفوظة.</p>
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-wrapper">
+            
+            <!-- Info Side -->
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p class="info-desc">تفضل بزيارة بوتيك أصيل أو تواصل معنا عبر القنوات التالية:</p>
+                
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="details">
+                        <h4>العنوان</h4>
+                        <p>كفر الشيخ ، مصر</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="details">
+                        <h4>الهاتف</h4>
+                        <p>01025364499</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="details">
+                        <h4>البريد الإلكتروني</h4>
+                        <p>concierge@aseel.com</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
             </div>
-        </div>
-    </footer>
 
-    <script src="js/main.js"></script>
+            <!-- Form Side -->
+            <div class="contact-form-box">
+                <h3>أرسل رسالة</h3>
+                <form id="contactForm" novalidate>
+                    <div class="input-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">الاسم الكامل</label>
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">البريد الإلكتروني</label>
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="subject" required placeholder=" ">
+                        <label for="subject">موضوع الرسالة</label>
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">نص الرسالة</label>
+                        <small class="error-msg"></small>
+                    </div>
+
+                    <button type="submit" class="btn-gold">إرسال الرسالة</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.639379648937!2d46.6752963!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh!5e0!3m2!1sen!2ssa!4v1625680000000!5m2!1sen!2ssa" width="100%" height="450" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-bottom">
+            <p>&بيلدجرام جميع الحقوق محفوظة.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

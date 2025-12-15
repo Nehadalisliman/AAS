@@ -6,15 +6,48 @@
     <title>السياسات | ASEEL</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Arabic Classic Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <style>
+        /* تطبيق الخط العربي الكلاسيكي Amiri على الصفحة كلها */
+        body, h1, h2, h3, h4, h5, h6, p, a, span, li, label, input, textarea, button {
+            font-family: 'Amiri', serif;
+        }
+
+        /* تلوين العناوين */
+        h1, h2, h3 {
+            color: #fff; /* لو خلفية داكنة */
+        }
+
+        p {
+            color: #ccc; /* نصوص المحتوى */
+        }
+    </style>
 </head>
 <body>
     <div id="app-header"></div>
-    <section class="page-header"><div class="container"><h1>السياسات والأحكام</h1></div></section>
-    <section class="container" style="max-width: 800px;">
-        <div style="margin-bottom: 40px;"><h3>سياسة الشحن</h3><p style="color: #ccc;">يتم شحن الطلبات خلال 2-5 أيام عمل.</p></div>
-        <div style="margin-bottom: 40px;"><h3>الاسترجاع</h3><p style="color: #ccc;">الاسترجاع خلال 7 أيام.</p></div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>السياسات والأحكام</h1>
+        </div>
     </section>
+
+    <section class="container" style="max-width: 800px;">
+        <div style="margin-bottom: 40px;">
+            <h3>سياسة الشحن</h3>
+            <p>يتم شحن الطلبات خلال 2-5 أيام عمل.</p>
+        </div>
+        <div style="margin-bottom: 40px;">
+            <h3>الاسترجاع</h3>
+            <p>الاسترجاع خلال 7 أيام.</p>
+        </div>
+    </section>
+
     <div id="app-footer"></div>
+
     <script src="js/main.js"></script>
 </body>
 </html>
